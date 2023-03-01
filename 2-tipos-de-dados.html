@@ -1,0 +1,28 @@
+<html>
+    <script>
+        /*
+        # Tipagem
+
+        O JavaScript é uma linguagem fracamente tipada. Isso significa que 'ele'
+        tentará converter em tempo de execução o dado baseado no valor
+
+        Exemplos:
+
+        ```javascript 
+        1           -> interger
+        1.2         -> float
+        "David"     -> String
+        true        -> Boolean
+
+        ```
+        */
+        console.log("1", typeof 1) // 1 number
+        console.log("1.2", typeof 1.2) // 1 number
+        console.log("David", typeof "David") // David String
+        console.log("1", typeof "1") // 1 String
+        console.log("true", typeof true) // true Boolean
+
+        console.log("-", "2", + 2) // - 22  -> por ter 2 textos, ele tratou o segundo 2 como String
+
+    </script>
+</html>
