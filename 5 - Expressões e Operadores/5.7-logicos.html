@@ -1,0 +1,34 @@
+<html>
+    <script>
+
+        // OR - se pelo menos 1 valor for verdadeiro, a expressão é verdadeira
+        console.log(false || false) // false
+        console.log(true || false) // true
+        console.log(false || true) // true
+        console.log(true || true) // true
+
+        // AND - a expressão somente é verdadeira quando todos os valores são verdadeiros
+        console.log(false && false) // false
+        console.log(true && false) // false
+        console.log(false && true) // false
+        console.log(true && true) // true
+
+        // É possível fazer misto com os operadores
+        console.log(false && false && true) // false
+        console.log(false || true || false) // true
+
+        console.log(false || (false && true)) // false
+
+        // NOT - barrar uma expressão
+        console.log(!true) // false
+        console.log(!false) // true
+        console.log(false && (false || !true)) // false
+
+        // Resultado de uma expressão (comparação) é boolean
+        console.log(23 < 24) // true
+        console.log(!(23 < 24)) // false
+        console.log((23 < 24) && ("A" == "A")) // true
+        console.log((23 < 24) && !("A" == "A")) // false
+
+    </script>
+</html>
