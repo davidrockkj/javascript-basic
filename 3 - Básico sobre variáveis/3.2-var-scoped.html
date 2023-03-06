@@ -1,0 +1,49 @@
+<html>
+    <script>
+        var x = 10
+        console.log("x", x) // 10
+
+        // SCOPE - espaços em que eles podem ser espaços de execução
+        // de uma estrutura de decisão (como IF), estrutura de 
+        // repetição (WHILE, FOR), ou uma função
+
+        // Abertura do SCOPO
+        {
+            console.log("x", x) // 10
+        }
+
+        console.log("x", x) // 10
+
+        // Conclui-se que ao declarar uma variável dentro de um SCOPO
+        // global, ela também estará disponível no SCOPO local
+
+        // ----------------------------------------------------------
+
+        console.log("x", x) // 10
+        {
+            console.log("x", x) // 10
+            x = 20
+        }
+        console.log("x", x) // 20
+
+        // ----------------------------------------------------------
+
+        console.log("x", x) // 10
+        {
+            console.log("x", x) // 10
+            x = 20
+
+            var y = 30
+        }
+        console.log("x", x) // 20
+        console.log("y", y) // 30
+
+        // Conclui-se que quando uma variável (x) é declarada dentro de um
+        // SCOPE global, ela está acessível dentro de SCOPE local e global
+        // podendo ser alterada em todos os SCOPES
+
+        // Quando declaramos uma variável (y) dentro de um SCOPE local
+        // ela também está acessível em todos os SCOPES.
+        // Logo, "var" é equivalente a uma "variável global"
+    </script>
+</html>

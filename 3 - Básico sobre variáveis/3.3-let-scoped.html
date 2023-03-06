@@ -1,0 +1,25 @@
+<html>
+    <script>
+        
+        let x = 10 // 10
+        console.log("x", x) // 10
+
+        {
+            console.log("x", x) // 10
+            x = 20
+
+            let y = 30
+        }
+
+        console.log("x", x) // 20
+        console.log("y", y) // y is not undefined
+
+        // Se eu declarar com "let" num SCOPE global, ela poderá ser
+        // acessada e alterada normalmente. Porém, caso eu 
+        // declare num SCOPE local, só poderá ser usada naquele SCOPE
+        
+        // var -> acessível independente do SCOPE
+        // let -> depende do SCOPE declarado e usado
+
+    </script>
+</html>

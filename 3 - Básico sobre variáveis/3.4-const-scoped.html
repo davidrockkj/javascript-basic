@@ -1,0 +1,47 @@
+<html>
+    <script>
+
+        // "Variáveis que não podem ser alteradas"
+        const x = 10
+        console.log("x", x) // 10
+
+        {
+            console.log("x", x) // 10
+            
+            const y = 30
+        }
+
+        console.log("x", x) // 10
+
+
+        // -------------------------------------------------------------------
+        const x = 10
+        console.log("x", x) // 10
+
+        x = 20
+
+        {
+            console.log("x", x) // Assignment to constant variable
+            
+            const y = 30
+        }
+
+        console.log("x", x) // Assignment to constant variable
+
+        // -------------------------------------------------------------------
+
+        const x = 10
+        console.log("x", x) // 10
+
+        {
+            console.log("x", x) // 10
+            
+            const y = 30
+        }
+
+        console.log("x", x) // 10
+        
+        console.log("y", y) // y is not defined
+
+    </script>
+</html>
