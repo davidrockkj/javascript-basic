@@ -1,0 +1,62 @@
+<html>
+    <script>
+        /* Assim como objetos, podem representar estruturas de dados
+        que podem ser Valores recuperados de uma API, banco de dados
+        qualquer coisa
+        */
+
+        // Fica difícil de se criar algo dessa maneira
+        const person1 = "Felipe"
+        const person2 = "Ana"
+        const person3 = "Paulo"
+        // ...
+        const person999 = "Zé"
+        
+        console.log(person1) // Felipe
+        console.log(person2) // Ana
+        console.log(person3) // Paulo
+        // ...
+        console.log(person999) // Zé
+        // --------------------------------------------
+
+        // Variável + índice -> numéricos começando do 0
+        const persons = ["Felipe", "Ana", "Paulo"] // 3 elementos
+
+        console.log(persons[0]) // Felipe
+        console.log(persons[1]) // Ana
+        console.log(persons[2]) // Paulo
+
+        persons[0] = "Zé"
+
+        console.log(persons[0]) // Zé
+        console.log(persons[1]) // Ana
+        console.log(persons[2]) // Paulo
+        console.log(persons[3]) // undefined - não tem nada
+
+        /*
+        persons[999] =  "Felipe" // Por conta desse 999 o array passará a ter 1000 posições
+
+        console.log(persons[0]) // Zé
+        console.log(persons[1]) // Ana
+        console.log(persons[2]) // Paulo
+        console.log(persons[999]) // Felipe
+        */
+
+        // Para saber o tamanho do array:
+        console.log(persons.length) // 3
+
+
+        const pessoas =
+        [
+            {name: "David", age: 40},
+            {name: "Felipe", age: 12},
+            {name: "Ana", age: 32},
+            "Zé", // não é uma boa prática, mas funciona
+        ]
+
+        console.log(pessoas[0]) // name: 'David', age: 40
+        console.log(pessoas[1]) // name: 'Felipe', age: 12
+        console.log(pessoas[2]) // name: 'Ana', age: 32
+        console.log(pessoas[3]) // Zé
+    </script>
+</html>

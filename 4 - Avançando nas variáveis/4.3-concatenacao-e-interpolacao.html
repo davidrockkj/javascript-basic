@@ -1,0 +1,44 @@
+<html>
+    <script>
+
+        let name, age
+
+        name = "Josias"
+        age = 40
+
+        console.log("name", name)
+        console.log("age", age)
+
+        // "A" + "B" = "AB"
+
+
+        // Fulando tem XX anos
+
+        // Concatenação (antiga)
+        console.log(name + " tem " + age + " anos,") // Josias tem 40 anos.
+
+        // Interpolação (moderna)
+        console.log(`${name} tem ${age} anos.`) // Josias tem 40 anos.
+
+        // tudo que estiver dentro das chaves é considerado como javascript
+        // podendo utilizar funções e muitas outras coisas
+
+        console.log(`${name} terá ${age + 1} anos.`) // Josias tem 41 anos.
+
+
+        let adress = {
+            street: "Rua Central"
+            city: "São José dos Campos"
+        }
+
+        console.log(`${name} terá ${age} anos. E reside em ${adress}`)
+        // Josias tem 41 anos. E reside em [object Object]
+
+        // O javaScript não consegue transformar um objeto em string.
+        // Porém, podemos fazer da seguinte maneira
+
+        console.log(`O endereço é ${JSON.stringify(adress)}`)
+        // O endereço é {"street": "Rua Central", "city": "São José dos Campos"}
+
+    </script>
+</html>

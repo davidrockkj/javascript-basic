@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <script>
+        const person = {
+            name: "David",
+            age: 89,
+            address: {
+                street: "Av. Central",
+                city: "São José dos Campos"
+            },
+        }
+
+        console.log(person) // mostra tudo
+        console.log(`${person}`) // [object Object]
+        console.log(`${JSON.stringify(person)}`) // Mostra tudo
+
+        // Para acessar uma propriedade desse objeto:
+        // console.log(objeto.propriedade)
+        console.log(person.name) // David
+
+        // também funciona com interpolação
+        console.log(`${person.name} tem ${person.age} anos.`)
+        // David tem 89 anos.
+        console.log(`E reside em ${person.address.city}`)
+        // E reside em São José dos Campos
+
+
+        // objects e arrays do tipo Const fogem à regra, podendo receber valor
+        // depois de serem declaradas
+
+
+    </script>
+</html>
