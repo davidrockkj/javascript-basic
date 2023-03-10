@@ -1,0 +1,27 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+
+        // IF dos erros
+
+        try {
+            // executa algo...
+            // consulta de API, Banco de Dados, arquivos...
+            
+            console.log("Consultando o banco de dados...")
+
+        } catch (error) {
+            // erro
+            // catch seria o ELSE do IF
+
+            alert('Erro de ...') // mostrando o aviso de erro para o 'cliente'
+            console.error(error) // mostrando os detalhes técnicos do problema
+
+        } finally {
+            // sempre executa ao final (opcional)
+        }
+
+        // Nunca deixar o catch vazio, pra evidenciar que EXISTE um PROBLEMA
+
+    </script>
+</html>
