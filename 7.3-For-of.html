@@ -1,0 +1,38 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+
+        const nomes = 
+        [
+            "Felipe",
+            "Maria",
+            "Paulo",
+            "Marcelo"
+        ]
+
+        for (let i = 0; i < 3; i++) {
+            console.log(nomes[i])
+            // Felipe
+            // Maria
+            // Paulo
+        }
+
+        // length = tamanho do array
+        for (let i = 0; i < nomes.length; i++) {
+            console.log(nomes[i])
+            // Felipe
+            // Maria
+            // Paulo
+            // Marcelo
+        }
+
+        // Para fazer o for sem precisar declarar
+        // variáveis e calcular tamanho de array em JS
+        
+        // const [variável] of [object]
+        for (const nome of nomes) {
+            console.log(nome)
+        }
+
+    </script>
+</html>

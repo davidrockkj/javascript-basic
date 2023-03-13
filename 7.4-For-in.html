@@ -1,0 +1,31 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+
+        // Iterar sobre um objeto
+        // iterar = fazer/dizer novamente; repetir
+
+        const person = {
+            name: "Felipe",
+            age: 40,
+            city: "Jacobina",
+        }
+
+        for (const prop in person) {
+            console.log(`Prop: ${prop}`)
+            // Prop: name
+            // Prop: age
+            // Prop: city
+        }
+
+        // Para saber o que tem escrito:
+        for (const prop in person) {
+            console.log(`Prop: ${prop} - ${person[prop]}`)
+            // Prop: name - Felipe
+            // Prop: age - 40
+            // Prop: city - Jacobina
+        }
+
+
+    </script>
+</html>
